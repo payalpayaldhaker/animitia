@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+            .p_common{ 
+
+                width: 278px;
+                height: 212px;
+
+            }
+            .p_overlay:hover .p_box1{
+
+                top: 0px;
+             }
+             .p_overlay:hover .p_box2{
+
+            bottom: 0px;
+            }
+            .p_overlay{ 
+               
+                
+                background-image: url("img/images\ \(1\).jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+                overflow: hidden;
+            }
+            .p_box1{ 
+                background-color:rgba(0 ,0 ,0 ,0.3);
+                position: absolute;
+                 top: -212px;
+                left: 0px;
+            }
+            .p_box2{
+
+                background-color: rgba(0 ,0 ,0 ,0.3);
+                position: absolute;
+                 bottom: -212px;
+                right: 0px;
+            }
+            .p1_common{ 
+
+                transition-property: all;
+                transition-duration: 0.2s;
+                transition-timing-function: linear;
+            }
+    
+    </style>
+</head>
+<body>
+     
+    <h1>overlay</h1>
+    <div class=" p_overlay p_common ">
+        <div class="p_box1 p_common  p1_common "></div>
+        <div class="p_box2 p_common  p1_common "></div>
+    </div>
+
+
+</body>
+</html>
