@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" /><title>Document</title>
+    <style>
+        body{ 
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+         .p_overlay{ 
+
+            width: 245px;
+            height: 180px;
+            background-color: red;
+            margin: auto;
+            margin-top: 200px;
+            
+            background-image: url("img/photo-4.jpg");
+            background-size: cover;
+            position: relative;
+            overflow: hidden;
+
+         }
+         .p_box1{ 
+                width: 100%;
+                height: 60px;
+                background-color: gray;
+                position: absolute;
+                top: -60px;
+                 left:0px
+                transtion-property:all;
+                transition-duration:0.2s;
+                transition-timinig-function:linear
+                padding: 15px 10px;
+
+         }
+         .p_overlay:hover  .p_box1{ 
+             top: 0px;
+         }
+         .p_box1  div{ 
+                    color: #fff;
+
+                }
+                .x{
+                        color:honeydew !important;
+                }
+                .a_anchor{ 
+                    width: 40px;
+                    height: 40px ;
+                    line-height: 40px;
+                    background-color: red;
+                    
+                    border-radius:40px ;
+                    text-align: center;
+                    float:right;
+                }
+                .p_overlay:hover  { 
+                    color: honeydew;
+                }
+                .p_overlay a{
+                    border:2px solid #fff;
+                }
+
+    </style>
+</head>
+<body>
+     <div class="p_overlay">
+         <div  class="p_box1"> 
+            <div style="float: left;"> 
+
+                <div> lorem ipsum</div>
+            <div class="x"> payal dhakad</div>
+            </div>
+            <a href="x"  class="a_anchor">
+                <i class="fas fa-arrow-circle-right"></i>
+            </a>
+        </div>
+         </div>
+     
+</body>
+</html>
